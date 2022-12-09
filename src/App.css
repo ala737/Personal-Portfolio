@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+  --orange:#f9ab00;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  padding: 0;margin: 0;
+  transition: all .2s;
+}
+html{
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/************************Navbar****************************/
+
+.navbar{
+  background: #666;
+}
+.logo{
+  width: 16rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav a{
+  text-transform: uppercase;
+  color: #ffff;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  margin:0 1rem;
+  transition: .3s;
+}
+.navbar-nav a:focus{
+  border-top: .5rem solid var(--orange);
+  padding-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-brand{
+  height: 6rem !important;
+  padding: 0 !important;
 }
